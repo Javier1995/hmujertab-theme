@@ -1,0 +1,16 @@
+:root {
+    --primary-hmujer: "#A20D37";
+    --navbar-menu-color: background: linear-gradient(to left, #860629, #860629);
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.bg-main-color{
+ background: var( --primary-hmujer)!important;
+} 
+
+nav.nav-main {
+    background:linear-gradient(to left, #79102c, #860629);
+    font-weight: bold;
+}

@@ -1,0 +1,50 @@
+// Required
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "./node_modules/bootstrap/scss/root";
+
+
+
+
+$custom-colors: (
+  "custom-color": #A10C36
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+$font-family-sans-serif:
+// Safari for macOS and iOS (San Francisco)
+"Mon",
+-apple-system,
+// Chrome < 56 for macOS (San Francisco)
+BlinkMacSystemFont,
+// Windows
+"Segoe UI",
+// Android
+"Roboto",
+// Basic web fallback
+"Helvetica Neue", Arial, sans-serif,
+// Emoji fonts
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+.z-index--1 {
+    z-index: -1;
+}
+.input-group{
+    width: 15%;
+    height: 15%;
+}
+
+@media (min-width:768px) {
+    .search-input{
+        width: 50%;
+    }
+}
