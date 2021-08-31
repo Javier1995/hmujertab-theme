@@ -5,49 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icon.svg" type="image/x-svg" />
     <!-- FontAwesome CSS-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
     <!-- styles -->
     <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Hospital Regional de alta Especialidad de la Mujer</title>
   </head>
   <body>
-    
-    <div class="position-relative">
-        <a href="tel:9933109000" class="text-white position-absolute end-0 me-5 mt-4"> <i class="fa fa-phone" aria-hidden="true"></i> (993) 310 90 00</a>
-        
-        <header class="vh-20 d-flex flex-row justify-content-between align-items-center p-4">
-            <img src="img/logo_hospital.png" alt="Logotipo junto con secretaria" class="figure-img img-fluid">
-            <div class="input-group align-self-end me-5">
-                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-            </div>
-        </header>
-       
-        <div class="position-absolute top-0 end-0  z-index--1">
-            <img src="img/fondo_red.png" alt="Fondo genial">
+ 
+      <a
+        href="tel:9933109000"
+        class="text-white position-absolute end-0 me-5 mt-4"
+      >
+        <i class="fa fa-phone" aria-hidden="true"></i> (993) 310 90 00</a
+      >
+
+      <header
+        class="
+          vh-20
+          d-flex
+          flex-row
+          justify-content-between
+          align-items-center
+          p-4
+        "
+      >
+        <img
+          src="img/logo_hospital.png"
+          alt="Logotipo junto con secretaria"
+          class="figure-img img-fluid"
+        />
+        <div class="input-group align-self-end me-5">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Recipient's username"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            Button
+          </button>
         </div>
-       
-    
-    <section class="hero vh-80 bg-custom-color">
+      </header>
+
+      <div class="position-absolute top-0 end-0 z-index--1">
+        <img src="img/fondo_red.png" alt="Fondo genial" />
+      </div>
+
+      <section class="hero vh-80 bg-custom-color">
         <div class="container">
-            <nav class="nav">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </nav>
+          <nav class="nav">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">DIRECTORIO TELEFONICO</a></li>
+              <li><a href="#">SERVICIOS</a></li>
+              <li><a href="#">NOSOTROS</a></li>
+              <li><a href="#">NOTICIAS</a></li>
+              <li><a href="#">COVID-19</a></li>
+            </ul>
+          </nav>
         </div>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
 
-    </section>
 
-    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inicial">
+        <div class="contactos">
+          <div class="correo">
+            <h3>CONTACTATE CON NOSOTROS</h3>
+            <img src="./img/email_icon.svg" alt="Email" />
+            <a href="#">Correo Institucional</a>
+          </div>
+  
+          <div class="ubicacion">
+            <h3>UBICACIÓN</h3>
+            <img src="./img/ubicacion_icon.svg" alt="Ubicación" />
+            <p>
+              Av. Gregorio Mendez Magaña no. 2838 Col. Tamulte de las Barrancas,
+              C.P 86150 Villahermosa, Tabasco
+            </p>
+          </div>
+  
+          <div class="enlaces">
+            <h3>ENLACES EXTERNOS</h3>
+            <img src="./img/enlace_icon.svg" alt="Enlaces" />
+            <ul>
+              <li><a href="#">SECRETARIA DE SALUD</a></li>
+              <li><a href="#">HOSPITAL JUAN GRAHAM</a></li>
+              <li><a href="#">HOSPITAL ROVIROSA</a></li>
+              <li><a href="#">HOSPITAL DEL NIÑO</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="#">MAPA DEL HOSPITAL <i class="fas fa-chevron-right"></i></a>
+      </div>
+      
+      <p>TODOS LOS DERECHOS RESERVADOS AL HOSPITAL REGIONAL DE ALTA ESPECIALIDAD DE LA MUJER &#169;</p>
 
-
+    </footer>
 
     <!-- Scripts -->
-    <script
-      src="./node_modules/bootstrap/dist/js/bootstrap.min.js"
-    ></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
