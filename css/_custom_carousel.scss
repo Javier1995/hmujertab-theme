@@ -1,0 +1,19 @@
+/* Editing carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    display: inline-block;
+    border-radius:50%;
+    width: 4rem;
+    height: 4rem;
+    background:#A10C36;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 70% 70%;
+}
+.carousel-control-prev-icon {
+    background-image: $carousel-control-prev-icon-bg;
+  }
+  
+.carousel-control-next-icon {
+    background-image: $carousel-control-next-icon-bg;
+}
