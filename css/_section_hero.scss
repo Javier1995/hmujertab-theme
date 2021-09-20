@@ -1,15 +1,45 @@
-
+$color-yellow: #C18F5A;
+.ms-6{
+    margin-left: 10rem;
+}
+.background-menu {
+    background-color:#860629;
+}
 .hero {
-    background-color:#820A2C;
+    background-color:#A20D37;
     .hero-red-bd{
-        z-index: 10;
+        z-index: 1;
     }
     .costum-color-yellow{
-        color: #C18F5A;
+        color: $color-yellow;
     }
 
     .carousel-indicators{
         z-index: 100;
     }
+    .carousel{
+        z-index:2;
+    } 
+}
 
+.menu-principal{
+   a {
+    position: relative;
+    width: 100%;
+   }
+    a:before{
+        content: '';
+        position:absolute;
+        bottom:0;
+        height: 0.3rem;
+        width: 0%;
+        background: $color-yellow;
+        transition: all 0.4s linear;
+    }
+
+     a:hover:before{
+        width: 80%;
+    }
+
+    
 }

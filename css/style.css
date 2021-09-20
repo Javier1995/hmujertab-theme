@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-costum {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11983,16 +11992,52 @@ fieldset:disabled .btn {
   background-color: white;
 }
 
+.ms-6 {
+  margin-left: 10rem;
+}
+
+.background-menu {
+  background-color: #860629;
+}
+
 .hero {
-  background-color: #820A2C;
+  background-color: #A20D37;
 }
 
 .hero .hero-red-bd {
-  z-index: 4;
+  z-index: 1;
 }
 
 .hero .costum-color-yellow {
   color: #C18F5A;
+}
+
+.hero .carousel-indicators {
+  z-index: 100;
+}
+
+.hero .carousel {
+  z-index: 2;
+}
+
+.menu-principal a {
+  position: relative;
+  width: 100%;
+}
+
+.menu-principal a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 0.3rem;
+  width: 0%;
+  background: #C18F5A;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.menu-principal a:hover:before {
+  width: 80%;
 }
 
 .z-index--1 {
