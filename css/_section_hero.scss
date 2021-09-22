@@ -2,11 +2,15 @@ $color-yellow: #C18F5A;
 .ms-6{
     margin-left: 10rem;
 }
-.background-menu {
-    background-color:#860629;
+.bg-menu{
+   
+    background:#860629 !important; 
 }
+.bg-hero {
+    background:#A20D37 !important;
+} 
 .hero {
-    background-color:#A20D37;
+    
     .hero-red-bd{
         z-index: 1;
     }

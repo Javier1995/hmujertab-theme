@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- Styles for the hospital -->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Hospital Regional de Alta Especialidad de la Mujer</title>
@@ -36,49 +37,70 @@
     </header>
     <!-- Header Final -->
 
-    <section class="hero">
+    <section class="hero bg-hero pb-4 text-center text-sm-start">
       <!-- Fondo rojo blanco -->
-      <div class="hero-red-bd position-absolute top-0 end-0">
+      <!-- <div class="hero-red-bd position-absolute top-0 end-0">
         <a
           href="tel:9933109000"
           class="text-white position-absolute end-0 me-5 mt-4"
         >
           <i class="fa fa-phone" aria-hidden="true"></i> (993) 310 90 00</a
         >
-        <img src="img/fondo_red.png" alt="Fondo genial" />
-      </div>
+        <img src="img/fondo_red.png" class="img-fluid" />
+      </div> -->
       <!-- Fondo rojo blanco fin-->
-   
-        <nav class="background-menu p-2 d-inline-block menu-principal">
-          <ul class="nav font-weight-bold justify-content-center">
-            <li class="nav-items font-weight-bold">
-              <a href="#" class="nav-link text-white">HOME</a>
-            </li>
-            <li class="nav-items">
-              <a href="#" class="nav-link text-white">DIRECTORIO TELEFONICO</a>
-            </li>
-            <li class="nav-items">
-              <a href="#" class="nav-link text-white">SERVICIOS</a>
-            </li>
-            <li class="nav-items">
-              <a href="#" class="nav-link text-white">NOSOTROS</a>
-            </li>
-            <li class="nav-items">
-              <a href="#" class="nav-link text-white">NOTICIAS</a>
-            </li>
-            <li class="nav-items">
-              <a href="#" class="nav-link text-white">COVID-19</a>
-            </li>
-          </ul>
-        </nav>
+
+      <nav class="navbar navbar-expand-lg pb-3 sticky-top bg-menu">
+       <div class="container-sm">
+        <button
+        class="navbar-toggler text-right "
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+      >
+        <i class="bi bi-list text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-start" id="navmenu">
+        <ul class="navbar-nav text-white">
+          <li class="nav-item">
+            <a href="#learn" class="nav-link text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#questions" class="nav-link text-white"
+              >Directorio Telefonico</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#instructors" class="nav-link text-white">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a href="#instructors" class="nav-link text-white">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="#instructors" class="nav-link text-white">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a href="#instructors" class="nav-link text-white">Covid-19</a>
+          </li>
+        </ul>
+      </div>  
+       </div>
+      </nav>
       <!-- hero content -->
-      <div class="hero-content row flex-row flex-wrap justify-content-center align-items-center text-white mw-100">
-        <div class="hero-text md-display-5 w-50">
-          <h3 class="text-costum">
+      <div class="container-fluid">
+        <div
+        class="
+          hero-content
+          d-sm-flex d-sm-flex-row"
+      >
+      
+        <div class="hero-text w-100 align-self-center d-flex flex-column justify-content-start">
+   
+           <h3 class="text-costum text-white">
             COMPROMETIDOS
-            <span class="costum-color-yellow d-block ms-6"> CON TU SALUD</span>
+            <span class="costum-color-yellow d-block"> CON TU SALUD</span>
           </h3>
-          <p>
+          <p class="sm-lead sm-text-justify text-white lg-w-50">
             El Hospital Regional de Alta Especialidad de la Mujer pertenece a la
             red de hospitales de la Secretaria de Salud del Gobierno del Estado
             de Tabasco; estamos comprometidos en brindar asistencia Obstétrica
@@ -87,31 +109,44 @@
             igual en la Unidad se atienden las patologias Ginecologicas propias
             de la mujer, en las diferentes etapa de la vida de una mujer:
             adolecencia, edad reproductiva y climaterio.
-          </p>
+          </p>  
+         
         </div>
 
         <!-- carousel -->
         <div
           id="carouselExampleControls"
-          class="carousel slide hero-slider w-50"
+          class="carousel slide hero-slider d-none d-sm-block w-75"
           data-bs-ride="carousel"
         >
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
           <div class="carousel-inner overflow-hidden">
             <div class="carousel-item active">
               <img
                 src="img/slides-picture/doctor_nurge.png"
-                class="d-block w-100"
+                class="d-block w-100 h-100"
                 alt="..."
               />
             </div>
             <div class="carousel-item overflow-hidden">
               <img
                 src="./img/slides-picture/doctora_nery.png"
-                class="d-block w-100"
+                class="d-block w-100 h-100" 
                 alt="..."
               />
             </div>
@@ -138,11 +173,13 @@
         <!-- carousel fin -->
       </div>
 
+      </div>
+     
       <!-- hero content fin-->
     </section>
 
     <!-- FOOTER -->
-    <footer>
+    <!--  <footer>
       <div class="footer-inicial">
         <div class="contactos">
           <div class="correo">
@@ -178,7 +215,7 @@
         TODOS LOS DERECHOS RESERVADOS AL HOSPITAL REGIONAL DE ALTA ESPECIALIDAD
         DE LA MUJER &#169;
       </p>
-    </footer>
+    </footer> -->
 
     <!-- Scripts -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

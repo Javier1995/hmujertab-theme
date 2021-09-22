@@ -8,6 +8,21 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 575.98px) {
+  .text-costum {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .text-costum {
+    font-size: 2rem;
+  }
+  #carouselExampleControls {
+    display: none;
+  }
+}
+
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11996,12 +12011,12 @@ fieldset:disabled .btn {
   margin-left: 10rem;
 }
 
-.background-menu {
-  background-color: #860629;
+.bg-menu {
+  background: #860629 !important;
 }
 
-.hero {
-  background-color: #A20D37;
+.bg-hero {
+  background: #A20D37 !important;
 }
 
 .hero .hero-red-bd {
