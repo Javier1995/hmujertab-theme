@@ -1,18 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
+.decoration-none{
+    text-decoration: none;
+}
+.enlaces  ul  {
+    list-style: none;
+}
+
+.w-90{
+    width: 90%;
+}
 .text-costum{
     font-size:4rem;
     font-weight: bold;
 }
+
+@media (max-width: 776px) { 
+    #carouselExampleControls{
+        display:none !important;
+     }
+      
+ }
 
 
 @media (max-width: 575.98px) { 
     .text-costum{
         font-size:1rem;
     }
+    .news-input{
+        width: 50%;
+      }
+      
  }
 
 

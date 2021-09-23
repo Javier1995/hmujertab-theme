@@ -11,12 +11,33 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <!-- Styles for the hospital -->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Hospital Regional de Alta Especialidad de la Mujer</title>
   </head>
   <body>
+    <div
+      class="
+        hero-red-bd
+        position-absolute
+        top-0
+        end-0
+        z-index--1
+        d-none d-md-none d-sm-block d-lg-block d-xl-block
+      "
+    >
+      <a
+        href="tel:9933109000"
+        class="text-white position-absolute end-0 me-5 mt-4"
+      >
+        <i class="fa fa-phone" aria-hidden="true"></i> (993) 310 90 00</a
+      >
+      <img src="img/fondo_red.png" class="img-fluid" />
+    </div>
     <!-- Header inicio -->
     <header
       class="
@@ -32,190 +53,271 @@
       <img
         src="img/logo_hospital.png"
         alt="Logotipo junto con secretaria"
-        class="figure-img img-fluid"
+        class="img-fluid"
       />
     </header>
     <!-- Header Final -->
 
-    <section class="hero bg-hero pb-4 text-center text-sm-start">
+    <section class="hero bg-hero text-center text-sm-start">
       <!-- Fondo rojo blanco -->
-      <!-- <div class="hero-red-bd position-absolute top-0 end-0">
-        <a
-          href="tel:9933109000"
-          class="text-white position-absolute end-0 me-5 mt-4"
-        >
-          <i class="fa fa-phone" aria-hidden="true"></i> (993) 310 90 00</a
-        >
-        <img src="img/fondo_red.png" class="img-fluid" />
-      </div> -->
-      <!-- Fondo rojo blanco fin-->
 
-      <nav class="navbar navbar-expand-lg pb-3 sticky-top bg-menu">
-       <div class="container-sm">
-        <button
-        class="navbar-toggler text-right "
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navmenu"
-      >
-        <i class="bi bi-list text-white"></i>
-      </button>
-      <div class="collapse navbar-collapse justify-content-start" id="navmenu">
-        <ul class="navbar-nav text-white">
-          <li class="nav-item">
-            <a href="#learn" class="nav-link text-white">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#questions" class="nav-link text-white"
-              >Directorio Telefonico</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#instructors" class="nav-link text-white">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a href="#instructors" class="nav-link text-white">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a href="#instructors" class="nav-link text-white">Noticias</a>
-          </li>
-          <li class="nav-item">
-            <a href="#instructors" class="nav-link text-white">Covid-19</a>
-          </li>
-        </ul>
-      </div>  
-       </div>
+      <nav class="navbar navbar-expand-lg pb-3 sticky-top bg-menu z-index--0">
+        <div class="container-sm">
+          <button
+            class="navbar-toggler text-right"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <i class="bi bi-list text-white"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-start"
+            id="navmenu"
+          >
+            <ul class="navbar-nav text-white">
+              <li class="nav-item">
+                <a href="#learn" class="nav-link text-white">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#questions" class="nav-link text-white"
+                  >Directorio Telefonico</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#instructors" class="nav-link text-white">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a href="#instructors" class="nav-link text-white">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a href="#instructors" class="nav-link text-white">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a href="#instructors" class="nav-link text-white">Covid-19</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="form-inline z-index--4">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
       </nav>
       <!-- hero content -->
       <div class="container-fluid">
-        <div
-        class="
-          hero-content
-          d-sm-flex d-sm-flex-row"
-      >
-      
-        <div class="hero-text w-100 align-self-center d-flex flex-column justify-content-start">
-   
-           <h3 class="text-costum text-white">
-            COMPROMETIDOS
-            <span class="costum-color-yellow d-block"> CON TU SALUD</span>
-          </h3>
-          <p class="sm-lead sm-text-justify text-white lg-w-50">
-            El Hospital Regional de Alta Especialidad de la Mujer pertenece a la
-            red de hospitales de la Secretaria de Salud del Gobierno del Estado
-            de Tabasco; estamos comprometidos en brindar asistencia Obstétrica
-            de calidad durante el embarazo, parto, puerperio inmediato así como
-            asistencia pediátrica del recién nacido y la lactancia materna; al
-            igual en la Unidad se atienden las patologias Ginecologicas propias
-            de la mujer, en las diferentes etapa de la vida de una mujer:
-            adolecencia, edad reproductiva y climaterio.
-          </p>  
-         
-        </div>
-
-        <!-- carousel -->
-        <div
-          id="carouselExampleControls"
-          class="carousel slide hero-slider d-none d-sm-block w-75"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-          </div>
-          <div class="carousel-inner overflow-hidden">
-            <div class="carousel-item active">
-              <img
-                src="img/slides-picture/doctor_nurge.png"
-                class="d-block w-100 h-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item overflow-hidden">
-              <img
-                src="./img/slides-picture/doctora_nery.png"
-                class="d-block w-100 h-100" 
-                alt="..."
-              />
+        <div class="hero-content d-sm-flex d-sm-flex-row">
+          <div
+            class="
+              hero-text
+              w-100
+              mt-sm-5
+              align-self-center
+              d-sm-flex
+              flex-column
+              justify-content-start
+              align-items-lg-start
+            "
+          >
+            <h3 class="text-costum text-white ms-lg-3 pt-sm-5">
+              COMPROMETIDOS
+              <span class="costum-color-yellow d-block"> CON TU SALUD</span>
+            </h3>
+            <p
+              class="
+                sm-lead sm-text-justify
+                text-white
+                lg-text-left
+                fs-4
+                ms-lg-3
+              "
+            >
+              Estamos comprometidos en brindar asistencia Obstétrica de calidad
+              durante el embarazo, parto, puerperio inmediato así como
+              asistencia pediátrica del recién nacido y la lactancia materna; al
+              igual en la Unidad se atienden las patologias Ginecologicas
+              propias de la mujer, en las diferentes etapa de la vida de una
+              mujer: adolecencia, edad reproductiva y climaterio.
+            </p>
+            <a href="#" class="btn btn-outline-main text-white text-bold btn-lg"
+              >Contactanos <i class="bi bi-telephone-fill"></i
+            ></a>
+            <div class="position-relative mt-4 pb-2">
+              <div
+                class="
+                  py-2
+                  px-4
+                  bg-menu
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <img
+                  class="img-fluid"
+                  src="img/slides-picture/seguro_icon.svg"
+                  alt="Icono"
+                />
+                <h5 class="text-white">HOSPITAL <br />SEGURO</h5>
+              </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
+
+          <!-- carousel -->
+          <div
+            id="carouselExampleControls"
+            class="carousel slide hero-slider d-none d-sm-block w-75"
+            data-bs-ride="carousel"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner overflow-hidden">
+              <div class="carousel-item active">
+                <img
+                  src="img/slides-picture/doctor_nurge.png"
+                  class="d-block w-100 h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item overflow-hidden">
+                <img
+                  src="./img/slides-picture/doctora_nery.png"
+                  class="d-block w-100 h-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- carousel fin -->
         </div>
-        <!-- carousel fin -->
       </div>
 
-      </div>
-     
       <!-- hero content fin-->
     </section>
 
     <!-- FOOTER -->
-    <!--  <footer>
-      <div class="footer-inicial">
-        <div class="contactos">
-          <div class="correo">
-            <h3>CONTACTATE CON NOSOTROS</h3>
+    <footer class="bg-hero z-index--4">
+      <div class="bg-menu">
+        <div
+          class="
+            contactos
+            d-lg-flex
+            position-relative
+            text-white
+            py-1
+            px-5
+            align-items-center
+            justify-content-evenly
+          "
+        >
+          <div class="correo d-flex">
             <img src="./img/email_icon.svg" alt="Email" />
-            <a href="#">Correo Institucional</a>
+            <div class="ms-3">
+              <h4 class="fs-5">CONTACTATE CON NOSOTROS</h4>
+              <a href="#" class="text-white" class="link-light"
+                >Correo Institucional</a
+              >
+            </div>
           </div>
 
-          <div class="ubicacion">
-            <h3>UBICACIÓN</h3>
+          <div class="ubicacion d-flex">
             <img src="./img/ubicacion_icon.svg" alt="Ubicación" />
-            <p>
-              Av. Gregorio Mendez Magaña no. 2838 Col. Tamulte de las Barrancas,
-              C.P 86150 Villahermosa, Tabasco
-            </p>
+            <div class="ms-3">
+              <h4 class="fs-5">UBICACIÓN</h4>
+              <p>
+                Av. Gregorio Mendez Magaña no. <br />
+                2838 Col. Tamulte de las Barrancas,<br />C.P 86150 Villahermosa,
+                Tabasco
+              </p>
+            </div>
           </div>
 
-          <div class="enlaces">
-            <h3>ENLACES EXTERNOS</h3>
+          <div class="enlaces d-flex">
             <img src="./img/enlace_icon.svg" alt="Enlaces" />
-            <ul>
-              <li><a href="#">SECRETARIA DE SALUD</a></li>
-              <li><a href="#">HOSPITAL JUAN GRAHAM</a></li>
-              <li><a href="#">HOSPITAL ROVIROSA</a></li>
-              <li><a href="#">HOSPITAL DEL NIÑO</a></li>
-            </ul>
+            <div>
+              <h4 class="fs-5">ENLACES EXTERNOS</h4>
+              <ul class="p-0 ms-3">
+                <li>
+                  <a href="#" class="link-light decoration-none"
+                    >SECRETARIA DE SALUD</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="link-light decoration-none"
+                    >HOSPITAL JUAN GRAHAM</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="link-light decoration-none"
+                    >HOSPITAL ROVIROSA</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="link-light decoration-none"
+                    >HOSPITAL DEL NIÑO</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <a href="#">MAPA DEL HOSPITAL <i class="fas fa-chevron-right"></i></a>
+
+        <div class="d-flex justify-content-center">
+          <a href="#" class="text-center link-light decoration-none fw-bold"
+            >MAPA DEL HOSPITAL <i class="fas fa-chevron-right ms-2"></i
+          ></a>
+        </div>
       </div>
 
-      <p>
-        TODOS LOS DERECHOS RESERVADOS AL HOSPITAL REGIONAL DE ALTA ESPECIALIDAD
-        DE LA MUJER &#169;
-      </p>
-    </footer> -->
+      <div class="w-100">
+        <p class="m-0 text-center text-white py-3 fs-6 m-lg-auto">
+          TODOS LOS DERECHOS RESERVADOS AL HOSPITAL REGIONAL DE ALTA
+          ESPECIALIDAD DE LA MUJER &#169;
+        </p>
+      </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

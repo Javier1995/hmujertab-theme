@@ -1,14 +1,59 @@
 $color-yellow: #C18F5A;
+$color-main:#860629;
+$color-sec: #A20D37;
 .ms-6{
     margin-left: 10rem;
 }
+
+.z-index--n1{
+    z-index: -1 !important;
+}
+.z-index--0{
+    z-index: 0 !important;
+}
+.z-index--1{
+    z-index: 1 !important;
+}
+.z-index--2{
+    z-index: 2 !important;
+}
+.z-index--3{
+    z-index: 3 !important;
+}
+.z-index--4{
+    z-index: 4 !important;
+}
 .bg-menu{
    
-    background:#860629 !important; 
+    background:$color-main !important; 
 }
 .bg-hero {
-    background:#A20D37 !important;
+    background:$color-sec !important;
 } 
+.text-menu {
+    color: $color-main
+}
+.text-hero {
+    color: $color-sec;
+    font-weight: bold;
+}
+.text-shadow {
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+
+/* Buttons */
+.btn-outline-main {
+    font-weight: bold;
+    border: 2px solid $color-main;
+    transition: all 0.4s linear;
+    &:hover {
+        background: $color-main;
+    }
+    &:focus {
+        background: none;
+    }
+}
+
 .hero {
     
     .hero-red-bd{
@@ -47,3 +92,16 @@ $color-yellow: #C18F5A;
 
     
 }
+
+.title {
+    @include font-size(4rem);
+  }
+  
+  .subtitle {
+    @include font-size(1.5rem);
+  }
+  
+  .content {
+    @include font-size(1rem);
+  }
+  
