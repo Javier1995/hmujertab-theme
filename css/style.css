@@ -12130,28 +12130,25 @@ fieldset:disabled .btn {
   width: 80%;
 }
 
-.title {
-  font-size: calc(1.525rem + 3.3vw);
+ul.main-menu li a.main-link {
+  position: relative;
+  width: 100%;
 }
 
-@media (min-width: 1200px) {
-  .title {
-    font-size: 4rem;
-  }
+ul.main-menu li a.main-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 0.3rem;
+  width: 0%;
+  background: #C18F5A;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
-.subtitle {
-  font-size: calc(1.275rem + 0.3vw);
-}
-
-@media (min-width: 1200px) {
-  .subtitle {
-    font-size: 1.5rem;
-  }
-}
-
-.content {
-  font-size: 1rem;
+ul.main-menu li a.main-link:hover:before {
+  width: 100%;
+  height: 10%;
 }
 
 .z-index--1 {

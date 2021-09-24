@@ -61,7 +61,16 @@
     <section class="hero bg-hero text-center text-sm-start">
       <!-- Fondo rojo blanco -->
 
-      <nav class="navbar navbar-expand-lg pb-3 sticky-top bg-menu z-index--0">
+      <nav
+        class="
+          navbar navbar-expand-lg
+          pb-3
+          sticky-top
+          bg-menu
+          z-index--0
+          box-shadow
+        "
+      >
         <div class="container-sm">
           <button
             class="navbar-toggler text-right"
@@ -75,26 +84,69 @@
             class="collapse navbar-collapse justify-content-start"
             id="navmenu"
           >
-            <ul class="navbar-nav text-white">
+            <ul class="navbar-nav text-white main-menu">
               <li class="nav-item">
-                <a href="#learn" class="nav-link text-white">Home</a>
+                <a href="#learn" class="nav-link text-white main-link">Home</a>
               </li>
-              <li class="nav-item">
-                <a href="#questions" class="nav-link text-white"
+              <li class="nav-item dropdown">
+                <a
+                  href="#questions"
+                  class="nav-link text-white dropdown-toggle main-link"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
                   >Directorio Telefonico</a
                 >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#instructors"
+                  class="nav-link text-white dropdown-toggle main-link"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Servicios</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#instructors"
+                  class="nav-link text-white dropdown-toggle main-link"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Nosotros</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a href="#instructors" class="nav-link text-white">Servicios</a>
+                <a href="#instructors" class="nav-link text-white main-link">Noticias</a>
               </li>
               <li class="nav-item">
-                <a href="#instructors" class="nav-link text-white">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a href="#instructors" class="nav-link text-white">Noticias</a>
-              </li>
-              <li class="nav-item">
-                <a href="#instructors" class="nav-link text-white">Covid-19</a>
+                <a href="#instructors" class="nav-link text-white main-link">Covid-19</a>
               </li>
             </ul>
           </div>

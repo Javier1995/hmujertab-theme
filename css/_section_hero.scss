@@ -93,15 +93,21 @@ $color-sec: #A20D37;
     
 }
 
-.title {
-    @include font-size(4rem);
-  }
-  
-  .subtitle {
-    @include font-size(1.5rem);
-  }
-  
-  .content {
-    @include font-size(1rem);
-  }
-  
+ul.main-menu  li a.main-link {
+    position: relative;
+    width: 100%;
+    &::before{
+        content: '';
+        position:absolute;
+        bottom:0;
+        height: 0.3rem;
+        width: 0%;
+        background: $color-yellow;
+        transition: all 0.4s linear;
+        
+    }
+    &:hover:before{
+        width:100%;
+        height: 10%;
+       }
+}
