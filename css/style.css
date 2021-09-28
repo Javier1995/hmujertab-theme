@@ -21,6 +21,10 @@ body {
   font-weight: bold;
 }
 
+.shadow-1 {
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 776px) {
   #carouselExampleControls {
     display: none !important;
@@ -12031,6 +12035,10 @@ fieldset:disabled .btn {
 
 .ms-6 {
   margin-left: 10rem;
+}
+
+.bg-secundary {
+  background: #C18F5A;
 }
 
 .z-index--n1 {
