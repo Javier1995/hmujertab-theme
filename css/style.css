@@ -12038,7 +12038,7 @@ fieldset:disabled .btn {
 }
 
 .bg-secundary {
-  background: #C18F5A;
+  background: rgba(193, 143, 90, 0.3);
 }
 
 .z-index--n1 {
@@ -12107,7 +12107,7 @@ fieldset:disabled .btn {
 }
 
 .hero .costum-color-yellow {
-  color: #C18F5A;
+  color: #c18f5a;
 }
 
 .hero .carousel-indicators {
@@ -12129,7 +12129,7 @@ fieldset:disabled .btn {
   bottom: 0;
   height: 0.3rem;
   width: 0%;
-  background: #C18F5A;
+  background: #c18f5a;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
@@ -12149,7 +12149,7 @@ ul.main-menu li a.main-link::before {
   bottom: 0;
   height: 0.3rem;
   width: 0%;
-  background: #C18F5A;
+  background: #c18f5a;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
@@ -12161,6 +12161,19 @@ ul.main-menu li a.main-link:hover:before {
 
 .z-index--1 {
   z-index: -1;
+}
+
+.scale-1 {
+  cursor: pointer;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  position: relative;
+  z-index: 2;
+}
+
+.scale-1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .input-group {

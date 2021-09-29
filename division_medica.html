@@ -20,25 +20,20 @@
     <title>Hospital Regional de Alta Especialidad de la Mujer</title>
   </head>
   <body>
-    <div
-      class="
-        hero-red-bd
-        position-absolute
-        top-0
-        end-0
-        z-index--1
-        d-none d-md-none d-sm-block d-lg-block d-xl-block
-      "
-    >
-      <a
-        href="tel:9933109000"
-        class="text-white position-absolute end-0 me-5 mt-4"
-      >
-        <i class="fa fa-phone" aria-hidden="true"></i> (993) 310 90 00</a
-      >
-      <img src="img/fondo_red.png" class="img-fluid" />
+    <div class="w-100">
+      <div class="container-fluid bg-hero d-sm-flex py-2">
+        <div class="align-self-sm-center text-white">
+          Tel
+          <a href="tel:9933109000" class="text-white">
+            <i class="fa fa-phone" aria-hidden="true"></i> (993) 310 90 00</a
+          >
+        </div>
+        <p class="m-0 text-center text-white flex-grow-1">
+          TODOS LOS DERECHOS RESERVADOS AL HOSPITAL REGIONAL DE ALTA
+          ESPECIALIDAD DE LA MUJER &#169;
+        </p>
+      </div>
     </div>
-    <!-- Header inicio -->
     <header
       class="
         vh-20
@@ -56,18 +51,13 @@
         class="img-fluid"
       />
     </header>
-    <!-- Header Final -->
-
-    <section class="hero bg-hero text-center text-sm-start">
-      <!-- Fondo rojo blanco -->
-
-      <nav
+    <nav
       class="
         navbar navbar-expand-lg
         py-3
         sticky-top
         bg-menu
-        z-index--0
+        z-index--5
         box-shadow
       "
     >
@@ -86,7 +76,9 @@
         >
           <ul class="navbar-nav text-white main-menu">
             <li class="nav-item">
-              <a href="#learn" class="nav-link text-white main-link">Home</a>
+              <a href="index.html" class="nav-link text-white main-link"
+                >Home</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -163,158 +155,183 @@
           />
         </form>
       </div>
-      
     </nav>
-      <!-- hero content -->
-      <div class="container-fluid">
-        <div class="hero-content d-sm-flex d-sm-flex-row">
-          <div
-            class="
-              hero-text
-              w-100
-              mt-sm-5
-              align-self-center
-              d-sm-flex
-              flex-column
-              justify-content-start
-              align-items-lg-start
-            "
-          >
-            <h3 class="text-costum text-white ms-lg-3 pt-sm-5">
-              COMPROMETIDOS
-              <span class="costum-color-yellow d-block"> CON TU SALUD</span>
-            </h3>
-            <p
-              class="
-                sm-lead sm-text-justify
-                text-white
-                lg-text-left
-                fs-4
-                ms-lg-3"
-            >
-              Estamos comprometidos en brindar asistencia Obstétrica de calidad
-              durante el embarazo, parto, puerperio inmediato así como
-              asistencia pediátrica del recién nacido y la lactancia materna; al
-              igual en la Unidad se atienden las patologias Ginecologicas
-              propias de la mujer, en las diferentes etapa de la vida de una
-              mujer: adolecencia, edad reproductiva y climaterio.
-            </p>
-            <a href="#" class="btn btn-outline-main text-white text-bold btn-lg"
-              >Contactanos <i class="bi bi-telephone-fill"></i
-            ></a>
-            <div class="position-relative mt-4 pb-2">
-              <div
-                class="
-                  py-2
-                  px-4
-                  bg-menu
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                "
-              >
-                <img
-                  class="img-fluid"
-                  src="img/slides-picture/seguro_icon.svg"
-                  alt="Icono"
-                />
-                <h5 class="text-white">HOSPITAL <br />SEGURO</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- carousel -->
-          <div
-            id="carouselExampleControls"
-            class="carousel slide hero-slider d-none d-sm-block w-75"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner o">
-              <div class="carousel-item active">
-                <img
-                  src="img/slides-picture/doctor_nurge.png"
-                  class="d-block w-100 h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item ">
-                <img
-                  src="./img/slides-picture/slide_3.png"
-                  class="d-block w-100 h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item ">
-                <img
-                  src="./img/slides-picture/doctora_nery.png"
-                  class="d-block w-100 h-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- carousel fin -->
-        </div>
+    <div class="position-relative ">
+      <div
+        class="
+          w-50
+          h-100
+          py-2
+          position-absolute
+          d-flex
+          align-items-center
+          justify-content-center
+          text-white
+          bg-secundary
+        "
+      >
+        <h3 class="text-costum shadow-1 text-left">DIVISIÓN MEDICA</h3>
       </div>
+      <img
+        src="img/doctor_directorio.jpg"
+        alt="Medicos"
+        class="img-fluid w-100 h-100"
+      />
+    </div>
 
-      <!-- hero content fin-->
-    </section>
+    <div class="container-fluid z-index--1 ">
+      <section class="p-5">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-5 col-lg-3">
+            <div class="card shadow rounded border-0 bg-menu scale-1 ">
+              <div class="card-body text-center">
+                <img
+                
+                  class="rounded-circle mb-3"
+                  src="./img/jefes/boca.png"
+                />
 
+                <h3 class="card-title mb-3 text-white">
+                  Dr. Carlos Alberto Bocanegra Zurita
+                </h3>
+                <p class="card-text text-white">
+                  Médico Gineco-Obstetra,
+                  Subdirector del HRAEM y
+                  Titular de la Unidad Médica
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-5">
+        <div class="row g-4">
+          <div class="col-md-5 col-lg-4">
+            <div class="card shadow rounded border-0 scale-1">
+              <div class="card-body text-center">
+                <img
+                  class="rounded-circle mb-3 "
+                  src="./img/jefes/user_1.png"
+                  height="100"
+                />
+
+                <h3 class="card-title mb-3 line">
+                  Dr. Miguel Angel Cruz Rubio
+                </h3>
+                <p class="card-text">
+                  Titular de la División de Asistencia Médica y
+                  Médico Cirujano 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="card shadow rounded border-0 scale-1 ">
+              <div class="card-body text-center">
+                <img
+                  class="rounded-circle mb-3" height="100"
+                  src="./img/jefes/user_1.png"
+                />
+
+                <h3 class="card-title mb-3 line">
+                  Dr. Gabriel Gerardo Garcia Hernandez
+                </h3>
+                <p class="card-text">
+                  Titular de la División de Ginecología y
+                  Médico Gineco-Obstetra 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="card shadow rounded border-0 scale-1 ">
+              <div class="card-body text-center">
+                <img
+                  class="rounded-circle mb-3"
+                  src="./img/jefes/user_1.png"
+                  height="100"
+                />
+
+                <h3 class="card-title mb-3">
+                  Dra. Karina Cruz Sanchéz
+                </h3>
+                <p class="card-text">
+                  Titular de la División de Obstetricia y
+                  Médico Gineco-Obstetra 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="card shadow rounded border-0 scale-1 ">
+              <div class="card-body text-center">
+                <img
+                  class="rounded-circle mb-3"
+                  src="./img/jefes/user_1.png"
+                  height="100"
+                />
+
+                <h3 class="card-title mb-3">
+                  Dr. Leonardo Ulises Garcia Perez
+                </h3>
+                <p class="card-text">
+                  Titular de la División de Biología de la Reproducción y
+                  Médico Gineco-Obstetra /Biologia de la Reproducción Humana
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="card shadow rounded border-0 scale-1 ">
+              <div class="card-body text-center">
+                <img
+                  class="rounded-circle mb-3"
+                  src="./img/jefes/user_1.png"
+                  height="100"
+                />
+
+                <h3 class="card-title mb-3">
+                  Dr. Leonardo Ulises Garcia Perez
+                </h3>
+                <p class="card-text">
+                  Titular de la División de Biología de la Reproducción y
+                  Médico Gineco-Obstetra /Biologia de la Reproducción Humana
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="card shadow rounded border-0 scale-1 ">
+              <div class="card-body text-center">
+                <img
+                  class="rounded-circle mb-3"
+                  src="./img/jefes/user_1.png"
+                  height="100"
+                />
+
+                <h3 class="card-title mb-3">
+                  Dr. Humberto Martinez Garcia
+                </h3>
+                <p class="card-text">
+                  Titular de la División de Neonatología y
+                  Médico Neonatologo
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- FOOTER -->
-    <footer class="bg-hero z-index--4">
-      <div class="bg-menu">
+    <footer class="bg-hero z-index--4 text-white position-relative bottom-0">
+      <div class="bg-menu py-4">
         <div
           class="
             contactos
             d-lg-flex
             position-relative
-            text-white
+            text-whited
             py-1
             px-5
             align-items-center
@@ -378,13 +395,6 @@
             >MAPA DEL HOSPITAL <i class="fas fa-chevron-right ms-2"></i
           ></a>
         </div>
-      </div>
-
-      <div class="w-100">
-        <p class="m-0 text-center text-white py-3 fs-6 m-lg-auto">
-          TODOS LOS DERECHOS RESERVADOS AL HOSPITAL REGIONAL DE ALTA
-          ESPECIALIDAD DE LA MUJER &#169;
-        </p>
       </div>
     </footer>
 

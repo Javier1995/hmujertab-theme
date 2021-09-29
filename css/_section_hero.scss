@@ -1,11 +1,14 @@
-$color-yellow: #C18F5A;
+$color-yellow: rgb(193, 143, 90);
 $color-main:#860629;
 $color-sec: #A20D37;
+
+
+
 .ms-6{
     margin-left: 10rem;
 }
 .bg-secundary{
-    background:$color-yellow ;
+    background:rgba(193, 143, 90, 0.3); ;
 }
 
 
