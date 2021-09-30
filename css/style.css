@@ -4,6 +4,14 @@ body {
   font-family: 'Montserrat', sans-serif !important;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+.ms-n2 {
+  margin-left: -18px !important;
+}
+
 .decoration-none {
   text-decoration: none;
 }
@@ -33,7 +41,7 @@ body {
 
 @media (max-width: 575.98px) {
   .text-costum {
-    font-size: 1rem;
+    font-size: 0.2rem;
   }
   .news-input {
     width: 50%;
@@ -12033,12 +12041,16 @@ fieldset:disabled .btn {
   background-color: white;
 }
 
+.icon-size {
+  width: 20%;
+}
+
 .ms-6 {
   margin-left: 10rem;
 }
 
 .bg-secundary {
-  background: rgba(193, 143, 90, 0.3);
+  background: rgba(193, 143, 90, 0.7);
 }
 
 .z-index--n1 {

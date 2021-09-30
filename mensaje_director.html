@@ -1,0 +1,355 @@
+<!-- First code for HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-svg" />
+    <!-- FontAwesome CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Styles for the hospital -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <title>Hospital Regional de Alta Especialidad de la Mujer</title>
+  </head>
+  <body>
+    <div class="w-100">
+      <div class="container-fluid bg-hero d-sm-flex py-2">
+        <div class="align-self-sm-center text-white">
+          Tel
+          <a href="tel:9933109000" class="text-white">
+            <i class="fa fa-phone" aria-hidden="true"></i> (993) 310 90 00</a
+          >
+        </div>
+        <p class="m-0 text-center text-white flex-grow-1">
+          TODOS LOS DERECHOS RESERVADOS AL HOSPITAL REGIONAL DE ALTA
+          ESPECIALIDAD DE LA MUJER &#169;
+        </p>
+      </div>
+    </div>
+    <header
+      class="
+        vh-20
+        d-flex
+        flex-row
+        justify-content-between
+        align-items-center
+        ps-4
+        p-2
+      "
+    >
+      <img
+        src="img/logo_hospital.png"
+        alt="Logotipo junto con secretaria"
+        class="img-fluid"
+      />
+    </header>
+    <nav
+      class="
+        navbar navbar-expand-lg
+        py-3
+        sticky-top
+        bg-menu
+        z-index--1
+        box-shadow
+      "
+    >
+      <div class="container-sm">
+        <button
+          class="navbar-toggler text-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <i class="bi bi-list text-white"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-start"
+          id="navmenu"
+        >
+          <ul class="navbar-nav text-white main-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-white main-link"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#questions"
+                class="nav-link text-white dropdown-toggle main-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Directorio Telefonico</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="directorio_activo.html"
+                    >Directorio Médico</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="directorio_area_extensiones.html"
+                    >Área y Extensiones</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#instructors"
+                class="nav-link text-white dropdown-toggle main-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Servicios</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="division_medica.html"
+                    >Divisiones Medicas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="calidad_educacion.html"
+                    >Calidad, Educación E Investigación</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="calidad.html">Calidad</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="educacion_salud.html"
+                    >Educación En Salud</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#instructors"
+                class="nav-link text-white dropdown-toggle main-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Nosotros</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="mensaje_director.html"
+                    >Mensaje del Director</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="historia.html">Historia</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="vision_mision.html"
+                    >Misión, Visión y Valores
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link text-white main-link"
+                >Noticias</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link text-white main-link"
+                >Covid-19</a
+              >
+            </li>
+          </ul>
+        </div>
+        <form class="form-inline z-index--4">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+    </nav>
+    <div class="position-relative w-100">
+      <div
+        class="
+          w-100
+          h-100
+          py-5
+          position-absolute
+          d-flex
+          align-items-center
+          justify-content-center
+          text-white
+          bg-secundary
+        "
+      >
+        <h3 class="text-costum shadow-1 text-center">MENSAJE DEL DIRECTOR</h3>
+      </div>
+      <img src="img/fondo_hospita.jpg" alt="Medicos" class="w-100 h-100" />
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="p-5">
+          <div class="row g-4 justify-content-center z-index--n1">
+            <div class="col-md-5 col-lg-3">
+              <div class="card rounded border-0">
+                <div class="card-body text-center">
+                  <img
+                    class="rounded-circle mb-3 shadow"
+                    src="https://hmujertab.gob.mx/wp-content/uploads/2021/04/fernando.jpg"
+                    width="100"
+                    height="100"
+                  />
+
+                  <h3 class="card-title mb-3">
+                    Dr. Fernando Joaquin Cruz Rubio
+                  </h3>
+                  <p class="card-text">
+                    Director del Hospital Regional de Alta Especialidad de la
+                    Mujer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col">
+              <h3>Mensaje</h3>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                deserunt facilis quo, voluptates sequi officiis fuga repellat
+                vero in, non asperiores quibusdam ducimus inventore cupiditate
+                animi hic dolores minus possimus! Possimus obcaecati vero nobis
+                ipsam unde recusandae eaque pariatur quaerat alias magnam.
+                Maiores veniam aut, accusamus iste labore culpa hic fugit
+                mollitia nesciunt commodi vitae velit, dolor quas. Sequi,
+                praesentium. Tempore ducimus officiis numquam, iusto asperiores
+                quia minima in tenetur veritatis accusamus quae a dolorem dolor
+                suscipit exercitationem. Culpa tempora autem quibusdam
+                voluptatum at inventore ipsam, porro expedita animi saepe.
+              </p>
+              <p class="text-justify">
+                Mollitia odit, tempora est soluta aperiam pariatur voluptate
+                optio tempore, reiciendis provident animi adipisci tenetur
+                magnam temporibus quae error placeat id illum, ad culpa
+                repellendus cumque! Doloremque provident dolores error? Expedita
+                commodi hic quo, ratione beatae nulla, molestiae quos illum, nam
+                itaque velit? Quaerat alias earum eum ipsum, perferendis dolorum
+                suscipit in sint totam repellat itaque error commodi molestias
+                cumque? Accusamus commodi deserunt explicabo quisquam eligendi
+                excepturi doloremque consectetur illum dolor modi perferendis
+                molestias voluptas, hic ipsum et ab unde eos similique assumenda
+                cumque eaque. Ducimus hic itaque eum. Dolore! Excepturi dolorum
+                dolor ratione, repudiandae voluptatibus reprehenderit, quidem
+                quibusdam doloremque obcaecati dolores ipsum accusamus
+                repellendus distinctio natus eius qui est odit aspernatur
+                facilis. Eos, iure rerum soluta suscipit explicabo similique.
+                Praesentium officiis suscipit saepe modi sequi dicta unde? Quas
+                fugit quae expedita cupiditate corrupti maxime, iusto possimus
+                nostrum, consectetur nobis consequatur temporibus cum tenetur
+                eveniet. Harum voluptatibus expedita eligendi necessitatibus!
+                Earum odit excepturi in corporis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-hero z-index--4 text-white position-relative bottom-0">
+      <div class="bg-menu py-4">
+        <div
+          class="
+            contactos
+            d-lg-flex
+            position-relative
+            text-whited
+            py-1
+            px-5
+            align-items-center
+            justify-content-evenly
+          "
+        >
+          <div class="correo d-flex">
+            <img src="./img/email_icon.svg" alt="Email" />
+            <div class="ms-3">
+              <h4 class="fs-5">CONTACTATE CON NOSOTROS</h4>
+              <a href="#" class="text-white" class="link-light"
+                >Correo Institucional</a
+              >
+            </div>
+          </div>
+
+          <div class="ubicacion d-flex">
+            <img src="./img/ubicacion_icon.svg" alt="Ubicación" />
+            <div class="ms-3">
+              <h4 class="fs-5">UBICACIÓN</h4>
+              <p>
+                Av. Gregorio Mendez Magaña no. <br />
+                2838 Col. Tamulte de las Barrancas,<br />C.P 86150 Villahermosa,
+                Tabasco
+              </p>
+            </div>
+          </div>
+
+          <div class="enlaces d-flex">
+            <img src="./img/enlace_icon.svg" alt="Enlaces" />
+            <div>
+              <h4 class="fs-5">ENLACES EXTERNOS</h4>
+              <ul class="p-0 ms-3">
+                <li>
+                  <a href="#" class="link-light decoration-none"
+                    >SECRETARIA DE SALUD</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="link-light decoration-none"
+                    >HOSPITAL JUAN GRAHAM</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="link-light decoration-none"
+                    >HOSPITAL ROVIROSA</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="link-light decoration-none"
+                    >HOSPITAL DEL NIÑO</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <a href="#" class="text-center link-light decoration-none fw-bold"
+            >MAPA DEL HOSPITAL <i class="fas fa-chevron-right ms-2"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
