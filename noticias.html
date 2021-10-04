@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+   
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icon.svg" type="image/x-svg" />
@@ -19,7 +22,21 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Hospital Regional de Alta Especialidad de la Mujer</title>
   </head>
-  <body>
+  <body >
+    
+
+    <!-- <div class="bg-menu position-absolute z-index--4">
+      <a href="" class="position-relative end-0 text-white"><i class="bi bi-x-lg"></i></a>
+        <div class="vh-100 vw-100 d-flex justify-content-center align-items-center">
+            <form action="#">
+              <div class="input-data">
+                  <input class="btn-search" type="text" name="">
+                  <button type="submit"><i class="bi bi-search text-white h4 fw-bolder"></i></button>
+              </div>
+            </form>
+        </div>
+    </div> -->
+
     <div class="w-100">
       <div class="container-fluid bg-hero d-sm-flex py-2">
         <div class="align-self-sm-center text-white">
@@ -164,26 +181,21 @@
             </li>
             <li class="nav-item">
               <a href="#instructors" class="nav-link text-white main-link"
-                >Noticias</a
-              >
+                >Noticias <i class="bi bi-newspaper"></i
+              ></a>
             </li>
             <li class="nav-item">
               <a href="#instructors" class="nav-link text-white main-link"
-                >Covid-19</a
-              >
+                >Covid-19 <i class="fas fa-virus"></i></a>
             </li>
           </ul>
         </div>
-        <form class="form-inline z-index--4">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-        </form>
+        <a href="#" class="search-btn"><i class="bi bi-search text-white h4"></i></a>
       </div>
     </nav>
+
+    
+
     <div class="position-relative w-100">
       <div
         class="
@@ -198,76 +210,206 @@
           bg-secundary
         "
       >
-        <h3 class="text-costum shadow-1 text-center">NOTICIAS <i class="bi bi-newspaper"></i></h3>
+        <h3 class="text-costum shadow-1 text-center">
+          NOTICIAS <i class="bi bi-newspaper"></i>
+        </h3>
       </div>
       <img src="img/fondo_hospita.jpg" alt="Medicos" class="w-100 h-100" />
     </div>
 
     <main>
       <div class="container">
-        <div class="p-5">
-          <div class="row g-4 justify-content-center z-index--n1">
-            <div class="col-md-5 col-lg-3">
-              <div class="card rounded border-0">
-                <div class="card-body text-center">
-                  <img
-                    class="rounded-circle mb-3 shadow"
-                    src="https://hmujertab.gob.mx/wp-content/uploads/2021/04/fernando.jpg"
-                    width="100"
-                    height="100"
-                  />
+        <div class="py-4">
+        <div class="row">
+          <div class="col">
+            <!-- carousel -->
+          <div
+          id="noticias"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#noticias"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#noticias"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#noticias"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner ">
+            <div class="carousel-item active">
+              <a href="google.com"><img
+                src="img/fondo_hospita.jpg"
+                class="d-block w-100 h-100"
+                alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item ">
+              <img
+                src="./img/fondo_hospita.jpg"
+                class="d-block w-100 h-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item ">
+              <img
+                src="./img/fondo_hospita.jpg"
+                class="d-block w-100 h-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#noticias"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#noticias"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- carousel fin -->
+      </div>
+          </div>
+        </div>
 
-                  <h3 class="card-title mb-3">
-                    Dr. Fernando Joaquin Cruz Rubio
-                  </h3>
-                  <p class="card-text">
-                    Director del Hospital Regional de Alta Especialidad de la
-                    Mujer
-                  </p>
-                </div>
+        <div class="row py-2">
+
+        
+          <div class="col-xl-3">
+            <div class="card">
+              <img class="card-img-top" src="https://loremflickr.com/286/180" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-forth-outline">Leer más...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card" >
+              <img class="card-img-top" src="https://loremflickr.com/286/180" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-forth-outline">Leer más...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card" >
+              <img class="card-img-top" src="https://loremflickr.com/286/180" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-forth-outline">Leer más...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card" >
+              <img class="card-img-top" src="https://loremflickr.com/286/180" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-forth-outline">Leer más...</a>
               </div>
             </div>
           </div>
 
-          <div class="row mt-3">
-            <div class="col">
-              <h3>Mensaje</h3>
-              <p class="text-justify">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
-                deserunt facilis quo, voluptates sequi officiis fuga repellat
-                vero in, non asperiores quibusdam ducimus inventore cupiditate
-                animi hic dolores minus possimus! Possimus obcaecati vero nobis
-                ipsam unde recusandae eaque pariatur quaerat alias magnam.
-                Maiores veniam aut, accusamus iste labore culpa hic fugit
-                mollitia nesciunt commodi vitae velit, dolor quas. Sequi,
-                praesentium. Tempore ducimus officiis numquam, iusto asperiores
-                quia minima in tenetur veritatis accusamus quae a dolorem dolor
-                suscipit exercitationem. Culpa tempora autem quibusdam
-                voluptatum at inventore ipsam, porro expedita animi saepe.
-              </p>
-              <p class="text-justify">
-                Mollitia odit, tempora est soluta aperiam pariatur voluptate
-                optio tempore, reiciendis provident animi adipisci tenetur
-                magnam temporibus quae error placeat id illum, ad culpa
-                repellendus cumque! Doloremque provident dolores error? Expedita
-                commodi hic quo, ratione beatae nulla, molestiae quos illum, nam
-                itaque velit? Quaerat alias earum eum ipsum, perferendis dolorum
-                suscipit in sint totam repellat itaque error commodi molestias
-                cumque? Accusamus commodi deserunt explicabo quisquam eligendi
-                excepturi doloremque consectetur illum dolor modi perferendis
-                molestias voluptas, hic ipsum et ab unde eos similique assumenda
-                cumque eaque. Ducimus hic itaque eum. Dolore! Excepturi dolorum
-                dolor ratione, repudiandae voluptatibus reprehenderit, quidem
-                quibusdam doloremque obcaecati dolores ipsum accusamus
-                repellendus distinctio natus eius qui est odit aspernatur
-                facilis. Eos, iure rerum soluta suscipit explicabo similique.
-                Praesentium officiis suscipit saepe modi sequi dicta unde? Quas
-                fugit quae expedita cupiditate corrupti maxime, iusto possimus
-                nostrum, consectetur nobis consequatur temporibus cum tenetur
-                eveniet. Harum voluptatibus expedita eligendi necessitatibus!
-                Earum odit excepturi in corporis.
-              </p>
+        </div>
+        <div class="row py-2">
+
+        
+          <div class="col-xl-3">
+            <div class="card">
+              <img class="card-img-top" src="https://loremflickr.com/286/180" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-forth-outline">Leer más...</a>
+              </div>
             </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card" >
+              <img class="card-img-top" src="https://loremflickr.com/286/180" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-forth-outline">Leer más...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card" >
+              <img class="card-img-top" src="https://loremflickr.com/286/180" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-forth-outline">Leer más...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card" >
+              <img class="card-img-top" src="https://loremflickr.com/286/180" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-forth-outline">Leer más...</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col">
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -347,7 +489,8 @@
         </div>
       </div>
     </footer>
-
+     <!-- font awesomes script -->
+     <script src="https://kit.fontawesome.com/ba7f1861b9.js" crossorigin="anonymous"></script>
     <!-- Scripts -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>

@@ -2,7 +2,39 @@ $color-yellow: rgb(193, 143, 90);
 $color-main:#860629;
 $color-sec: #A20D37;
 
+.btn-search{
+    background: none;
+    border:none;
+}
+.input-data{
+  border-bottom: 2px solid #fff;
+  button{
+    border:none;
+    background: none;
+    &:focus{
+        outline: 0;
+    }
+  }
+}
 
+
+.btn-forth-outline {
+    border: 1px solid $color-main;
+    color:$color-main;
+    &:hover{
+        color:#fff;
+        background: $color-main;
+    }
+  }
+  .page-link {
+      color: $color-main;
+  }
+  .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: $color-main;
+    border-color: $color-main;
+  }
 .icon-size {
     width: 20%;
 }

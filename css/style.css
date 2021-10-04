@@ -12041,6 +12041,45 @@ fieldset:disabled .btn {
   background-color: white;
 }
 
+.btn-search {
+  background: none;
+  border: none;
+}
+
+.input-data {
+  border-bottom: 2px solid #fff;
+}
+
+.input-data button {
+  border: none;
+  background: none;
+}
+
+.input-data button:focus {
+  outline: 0;
+}
+
+.btn-forth-outline {
+  border: 1px solid #860629;
+  color: #860629;
+}
+
+.btn-forth-outline:hover {
+  color: #fff;
+  background: #860629;
+}
+
+.page-link {
+  color: #860629;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #860629;
+  border-color: #860629;
+}
+
 .icon-size {
   width: 20%;
 }
