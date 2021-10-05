@@ -20,6 +20,18 @@
     <title>Hospital Regional de Alta Especialidad de la Mujer</title>
   </head>
   <body>
+    <div id="search_window" class="bg-menu position-fixed z-index--4  vh-100 vw-100 d-flex d-flex justify-content-center align-items-center">
+      <a href="javascript:void(0)" class="text-white position-absolute close-search" id="close-search"><i class="bi bi-x-lg"></i></a>
+      <div class="position-relative">
+          <form action="#">
+            <div class="input-data">
+                <input class="btn-search text-white fw-bolder fs-4 px-3 py-2" type="text" placeholder="Escribir Aquí" name="search">
+                <button type="submit"><i class="bi bi-search text-white h4 fw-bolder "></i></button>
+            </div>
+          </form>
+      </div>
+  </div> 
+
     <div
       class="
         hero-red-bd
@@ -67,7 +79,7 @@
         py-3
         sticky-top
         bg-menu
-        z-index--1
+        z-index--3
         box-shadow
       "
     >
@@ -183,14 +195,7 @@
             </li>
           </ul>
         </div>
-        <form class="form-inline z-index--4">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-        </form>
+        <a href="javascript:void(0)" id="btn-search" class="search-btn"><i class="bi bi-search text-white h4"></i></a>
       </div>
     </nav>
       <!-- hero content -->

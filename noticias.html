@@ -22,20 +22,20 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Hospital Regional de Alta Especialidad de la Mujer</title>
   </head>
-  <body >
+  <body>
     
 
-    <!-- <div class="bg-menu position-absolute z-index--4">
-      <a href="" class="position-relative end-0 text-white"><i class="bi bi-x-lg"></i></a>
-        <div class="vh-100 vw-100 d-flex justify-content-center align-items-center">
+   <div id="search_window" class="bg-menu position-fixed z-index--4  vh-100 vw-100 d-flex d-flex justify-content-center align-items-center">
+        <a href="javascript:void(0)" class="text-white position-absolute close-search" id="close-search"><i class="bi bi-x-lg"></i></a>
+        <div class="position-relative">
             <form action="#">
               <div class="input-data">
-                  <input class="btn-search" type="text" name="">
-                  <button type="submit"><i class="bi bi-search text-white h4 fw-bolder"></i></button>
+                  <input class="btn-search text-white fw-bolder fs-4 px-3 py-2" type="text" placeholder="Escribir Aquí" name="search">
+                  <button type="submit"><i class="bi bi-search text-white h4 fw-bolder "></i></button>
               </div>
             </form>
         </div>
-    </div> -->
+    </div> 
 
     <div class="w-100">
       <div class="container-fluid bg-hero d-sm-flex py-2">
@@ -75,8 +75,7 @@
         sticky-top
         bg-menu
         z-index--1
-        box-shadow
-      "
+        box-shadow"
     >
       <div class="container-sm">
         <button
@@ -190,7 +189,7 @@
             </li>
           </ul>
         </div>
-        <a href="#" class="search-btn"><i class="bi bi-search text-white h4"></i></a>
+        <a href="javascript:void(0)" id="btn-search" class="search-btn"><i class="bi bi-search text-white h4"></i></a>
       </div>
     </nav>
 
@@ -416,7 +415,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-hero z-index--4 text-white position-relative bottom-0">
+    <footer class="bg-hero z-index--3 text-white position-relative bottom-0">
       <div class="bg-menu py-4">
         <div
           class="
